@@ -2,7 +2,7 @@
 $('#submit').on('click', function(){
     alert('submit works');
 
-    var employeeSurvey = {
+    const employeeSurvey = {
         name: $('#name').val(),
         photo: $('#photo').val(),
         scores: [
@@ -20,6 +20,7 @@ $('#submit').on('click', function(){
     }
     $.post('/api/employees', employeeSurvey, function(response){
         console.log(response, "This should be the best match");
+        $('#match-name').text(response.name)
     });
 });
 
@@ -28,3 +29,5 @@ $('#submit').on('click', function(){
 //     $('#match-photo').attr('src', data.photo);
 //     $('#match-modal').modal('show)
 // }
+
+
