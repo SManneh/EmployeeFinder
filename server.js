@@ -14,8 +14,8 @@ app.use(express.json())
 const htmlRoutes = require("./app/routing/htmlRoutes.js");
 const apiRoutes = require("./app/routing/apiRoutes.js");
 
-app.use(apiRoutes);
-app.use(htmlRoutes);
+app.use('/api',apiRoutes);
+app.use('/',htmlRoutes);
 
 
 // Starts our server on the predefined PORT

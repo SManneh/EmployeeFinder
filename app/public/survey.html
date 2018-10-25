@@ -11,6 +11,30 @@
 </head>
 
 <body>
+
+<!-- Modal -->
+<div id="match-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong>Your Best Match is!</strong></h2>
+                    <button class="close float-right" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-photo" src="" alt="" width='100%'>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+             
+
      <div class="container">
 
     <h1>Survey Questions</h1>
@@ -135,10 +159,11 @@
     <br>
     <br>
     
-    <div id='error'></div>
+
     <!-- Submit Button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
-    
+   
+
      <hr>
      <footer class="footer">
        <div class="container">
@@ -148,6 +173,9 @@
      
    </div>
 
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="/js/survey.js"></script>
   
 </body>
