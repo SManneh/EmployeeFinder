@@ -21,8 +21,9 @@ $('#submit').on('click', function(event){
     }
     // ajax call to post employeeSurvey variable to the api/employee route and also to display response on the modal
     $.post('/api/employees', employeeSurvey, function(response){
+        console.log(response.photo)
         $('#match-name').text(response.name);
-        $('#match-photo').attr(response.photo)
+        $('#match-img').attr('src',response.photo)
         // clearing out form after submission
         $('#name').val('');
         $('#photo').val('');
