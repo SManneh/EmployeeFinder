@@ -1,7 +1,8 @@
-
-$('#submit').on('click', function(){
-    alert('submit works');
-
+// onclick function
+$('#submit').on('click', function(event){
+    event.preventDefault()
+    
+// asssigning the survey response in to a variable
     const employeeSurvey = {
         name: $('#name').val(),
         photo: $('#photo').val(),
@@ -18,16 +19,12 @@ $('#submit').on('click', function(){
             $('#q10').val()
         ]
     }
+    // ajax call to post employeeSurvey variable to the api/employee route and also to display response on the modal
     $.post('/api/employees', employeeSurvey, function(response){
-        console.log(response, "This should be the best match");
-        $('#match-name').text(response.name)
+        $('#match-name').text(response.name);
+        $('#match-photo').attr(response.photo)
     });
 });
 
-// const showModal = function(data){
-//     $('#match-name').append(data.name);
-//     $('#match-photo').attr('src', data.photo);
-//     $('#match-modal').modal('show)
-// }
 
 
