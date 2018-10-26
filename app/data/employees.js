@@ -16,8 +16,8 @@ module.exports = [
     ]
     },
     {
-        "name":"Alvaro",
-      "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Mufasa",
+      "photo":"http://elelur.com/data_images/mammals/lion/lion-03.jpg",
       "scores":[
           1,
           1,
@@ -32,8 +32,8 @@ module.exports = [
         ]
         },
         {
-            "name":"Nabou",
-          "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+            "name":"Gi-Gi",
+          "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd5MtI9VWApZYOklD09ohzmUoRn0wAopWjwfUn6I5hl51vc8zl",
           "scores":[
               5,
               5,
@@ -46,5 +46,37 @@ module.exports = [
               5,
               5
             ]
-            }
+            },
+            {
+                "name":"Nala",
+              "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTu_gNaWMxU3aaTYTMbGxlFGuReEhaSXW1A01BTAtJRpeEgnkt",
+              "scores":[
+                  5,
+                  1,
+                  5,
+                  1,
+                  5,
+                  1,
+                  5,
+                  1,
+                  5,
+                  1,
+                ]
+                },
+                {
+                    "name":"Rafiki",
+                  "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbLRBaf1PrYBdN6sVUgIetZ5Y1GuuZffu0XmniZA0VH-ngdkCw",
+                  "scores":[
+                      4,
+                      3,
+                      3,
+                      4,
+                      4,
+                      3,
+                      4,
+                      4,
+                      3,
+                      3
+                    ]
+                    }
 ]
