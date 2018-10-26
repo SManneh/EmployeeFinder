@@ -23,6 +23,13 @@ $('#submit').on('click', function(event){
     $.post('/api/employees', employeeSurvey, function(response){
         $('#match-name').text(response.name);
         $('#match-photo').attr(response.photo)
+        // clearing out form after submission
+        $('#name').val('');
+        $('#photo').val('');
+        // loop through the question values to insert empty strings
+        for(let i = 1; i <= employeeSurvey.scores.length; i++){
+            $(`#q${i}`).val('')
+        }
     });
 });
 
